@@ -55,11 +55,17 @@ El jugador ganador es {jugador_ganador.nombre}""")
 
     def loop(self):
         "Loop del juego, se ejecuta hasta finalizar la partida"
+        ronda = 0
         while(True):
+            ronda += 1
             self._turno(self.jugador1)
             self._clear_screen()
             self._turno(self.jugador2)
             self._batalla()
+
+            # limitación para permitir tests de funcionalidad sin implementación
+            if ronda == 100:
+                break
 
     def _daño_al_jugador(self, defensor, atacante):
         """
