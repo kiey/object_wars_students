@@ -6,6 +6,12 @@ Instrucciones para descargar
 git clone https://github.com/kiey/object_wars_students.git
 ```
 
+Entrar en la carpeta del proyecto
+
+```
+cd object_wars_students/
+```
+
 Ejecutar la demo, solo disponible en linux.
 
 ```
