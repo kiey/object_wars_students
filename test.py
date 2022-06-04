@@ -144,7 +144,7 @@ class Test_integracion():
         assert(miJuego.jugador1.puntos_vida == 20)
         assert(miJuego.jugador2.puntos_vida == 17)
 
-    def test_batalla_soldado_vs_2_arqueros(self):
+    def test_batalla_soldado_vs_2_soldados(self):
         miJuego = Juego("Jugador1", "Jugador2")
 
         miJuego.jugador1.unidades.append(Soldado())
